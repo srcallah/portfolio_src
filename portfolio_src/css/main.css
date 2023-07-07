@@ -10,6 +10,26 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+   @font-face {
+    font-family: 'Panama';
+    src: url("../font/PanamaRegular.otf") format('otf');
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Panama';
+    src: url("../font/PanamaItalic.woff") format('woff');
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Seeko';
+    src: url("../font/seeko-Regular.woff") format('woff');
+    font-style: normal;
+    font-weight: 400;
+  }
+
 
 html {
   color: #222;
@@ -17,23 +37,110 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+body{
+  margin: 15px;
+  font-family: "Panama";  
+}
+
+h1, h2, p, a{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+a.text-red{
+  color: red;
+}
+
+a.text-green{
+  color: rgb(0,255,0);
+}
+
+a.text-blue{
+  color: blue;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+ul{
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  text-align: justify;
+  padding: 5px 0;
+}
+
+
+
+
+/* Clock container styles -----------*/
+
+.clock-container{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: start;
+  padding: 10px;
+}
+
+.clock-settings{
+  padding-right: 10px;
+}
+
+.clock-settings ul li{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.clock-numbers{
+  font-family: 'Seeko';
+  font-size: 100px;
+  line-height: 1;
+  text-align: left;
+}
+
+.project-index{
+  position: absolute;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  padding: 15px;
+}
+
+.index-item{
+ margin: 0;
+ padding: 10px 1px;
+}
+
+.index-item h2{
+  border-bottom: 1px dashed;
+  padding: 4px 0;
+}
+
+.index-item p{
+  padding: 8px 0;
+
+}
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: lime;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: lime;
   text-shadow: none;
 }
 
@@ -86,6 +193,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
 
 /* ==========================================================================
    Helper classes

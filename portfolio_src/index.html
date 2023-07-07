@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Sam Callahan</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,8 +24,57 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- Alarm clock interface -->
+  <div class="clock-container">
+    <div class="clock-settings">
+      <ul>
+        <li>
+          &nbsp;
+          <a class="text-red" href="#">*</a>
+          &nbsp;
+          <a class="text-green" href="#">*</a>
+          &nbsp;
+          <a class="text-blue" href="#">*</a>
+          &nbsp;
+        </li>
+        <li> 
+          &#91;
+          <a href="#">AM</a>
+           / 
+          <a href="#">PM</a>
+          &#93;
+        </li>
+        <li>
+          &#91; 
+          <a href="#" id="set">SET</a>
+          &#93;
+        </li>
+      </ul>
+    </div>
+    <div class="clock-numbers">
+        <span id="hour" contenteditable="true">00</span>:<span id="minutes" contenteditable="true">00</span>
+       
+
+      </div>
+  </div>
+  <!--End alarm clock-->
+
+  <div class="project-index">
+   <div class="index-item">
+    <h2>Project</h2>
+    <p>Info</p>
+   </div>
+   <div class="index-item">
+    <h2>Date</h2>
+    <p>2023</p>
+  </div>
+   <div class="index-item">
+     <h2>Details</h2>
+     <p>Sam Callahan is a graphic designer and artist. She is currently living and working in New Haven, CT where she received her MFA at the Yale School of Art in 2023. For collaborations and commissions, contact email@sam-callahan.com</p>
+   </div>
+  </div>
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
