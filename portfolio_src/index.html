@@ -12,14 +12,19 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
@@ -28,16 +33,16 @@
   <div class="clock-container">
     <div class="clock-settings">
       <ul>
-        <li>
+        <li class="ast">
           &nbsp;
-          <a class="text-red" href="#">*</a>
+          <a href="#" class="text-red" data-original="./icon.png">1</a>
           &nbsp;
-          <a class="text-green" href="#">*</a>
+          <a href="#" class="text-green" data-original="./icon.png">2</a>
           &nbsp;
-          <a class="text-blue" href="#">*</a>
+          <a href="#" class="text-blue">3</a>
           &nbsp;
         </li>
-        <li> 
+        <li class="ampm"> 
           &#91;
           <a href="#">AM</a>
            / 
@@ -46,33 +51,43 @@
         </li>
         <li>
           &#91; 
-          <a href="#" id="set">SET</a>
+          <a href="#" class="set-button" id="set">SET</a>
           &#93;
         </li>
       </ul>
+      <!-- <img 
+        src="./icon.png" 
+        alt="" 
+        data-original="./icon.png"/>
+      <img 
+      src="./tile-wide.png" 
+      alt="" 
+      data-original="./tile-wide.png"/> -->
+
     </div>
     <div class="clock-numbers">
-        <span id="hour" contenteditable="true">00</span>:<span id="minutes" contenteditable="true">00</span>
+        <!-- <span id="hours">00</span>:<span id="minutes">00</span> -->
+        <input id="hours" type="number" min="00" max="12" value="00"/>
+        <span class="blink">:</span>
+        <input id="minutes" type="number" min="00" max="60" value="00"/>
        
-
-      </div>
+    </div>
   </div>
   <!--End alarm clock-->
 
-  <div class="project-index">
-   <div class="index-item">
-    <h2>Project</h2>
-    <p>Info</p>
-   </div>
-   <div class="index-item">
-    <h2>Date</h2>
-    <p>2023</p>
+  <!-- Modal boxes appear here -->
+  <div class="modal">
+    <img 
+    src="" 
+    alt="" 
+    class="full-img"
+    />
+    <caption class="mobile-caption">
+      Sam Callahan is a graphic designer and artist. She is currently living and working in New Haven, CT where she received her MFA at the Yale School of Art in 2023. For collaborations and commissions, contact email@sam-callahan.com
+    </caption>
   </div>
-   <div class="index-item">
-     <h2>Details</h2>
-     <p>Sam Callahan is a graphic designer and artist. She is currently living and working in New Haven, CT where she received her MFA at the Yale School of Art in 2023. For collaborations and commissions, contact email@sam-callahan.com</p>
-   </div>
-  </div>
+  
+  <p>Sam Callahan is a graphic designer and artist. She is currently living and working in New Haven, CT where she received her MFA at the Yale School of Art in 2023. For collaborations and commissions, contact email@sam-callahan.com</p>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

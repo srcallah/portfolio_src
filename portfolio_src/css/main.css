@@ -39,7 +39,7 @@ html {
 
 body{
   margin: 15px;
-  font-family: "Panama";  
+  font-family: "Panama";
 }
 
 h1, h2, p, a{
@@ -54,32 +54,130 @@ a{
   color: #000000;
 }
 
-a.text-red{
-  color: red;
-}
-
-a.text-green{
-  color: rgb(0,255,0);
-}
-
-a.text-blue{
-  color: blue;
-}
-
 a:hover{
-  text-decoration: underline;
+  background-color: black;
+  color: white;
 }
 
-ul{
-
+ul,li{
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-ul li{
-  text-align: justify;
-  padding: 5px 0;
+nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px dashed;
+}
+
+nav div a{
+  display: block;
+}
+
+video{
+  width: 100%;
+}
+
+
+
+.ast a{
+  margin-bottom: 5px;
+  font-size: 9pt;
+  padding: 2px;
+  border-radius: 10%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.ast a:hover{
+  background-color: black;
+  color: white;
+  line-height: 1.7;
+}
+
+
+a.text-red{
+  background-color: rgb(255,0,0);
+  color: black;
+  line-height: 1.7;
+}
+
+a.text-green{
+  background-color: rgb(0,255,0);
+  color: black;
+}
+
+a.text-blue{
+  background-color: blue;
+  color: black;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal.open{
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+.full-img{
+  position:absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(.5);
+}
+
+.full-img.open{
+  transform: translate(-50%,-50%) scale(1);
+
+}
+
+caption{
+  position:absolute;
+  height: 70%;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(.5);
+}
+
+.portfolio-container{
+  margin: 0;
+  padding: 20px 0;
+}
+
+.project-container{
+  height: 100vh;
+}
+
+.p-image-container{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  height: 80vh;
+  cursor: ew-resize;
+}
+
+.p-image-container img, .p-image-container video{
+  padding-right: 8px;
+  }
+
+.p-text-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
 }
 
 
@@ -109,6 +207,27 @@ ul li{
   font-size: 100px;
   line-height: 1;
   text-align: left;
+}
+
+.clock-numbers input{
+  padding: 5px;
+  min-width: 170px;
+}
+
+.blink {
+  animation: blink-animation 1.5s steps(3, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(3, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 .project-index{
@@ -194,7 +313,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+       /* display: none; <- Crashes Chrome on hover */
+       -webkit-appearance: none;
+       margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+   }
+   
+   input[type=number] {
+       -moz-appearance:textfield; /* Firefox */
+       appearance:textfield; /* Firefox */
 
+   }
 
 /* ==========================================================================
    Helper classes
@@ -369,4 +499,55 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .clock-container{
+    display: block;
+  }
+
+  .clock-settings ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .clock-settings ul li{
+    padding: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .clock-container{
+    display: block;
+  }
+  .clock-numbers{
+    margin: auto;
+    font-family: 'Seeko';
+    font-size: 69px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .clock-numbers input{
+    padding: 5px;
+    min-width: 120px;
+  }
+
+  .clock-settings ul{
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  li.ast a{
+    font-size: px;
+    font-weight: 800;
+
+  }
+
+ 
+}
+  
+
 
