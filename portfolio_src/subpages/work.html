@@ -21,8 +21,9 @@
   <meta name="theme-color" content="#ffffff">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  
 
 
 </head>
@@ -114,20 +115,57 @@
         </div>
       </div>
 
+      <div class="project-container">
+        <div class="p-image-container">
+          <img src="../img/wildflowers1.jpg"/>
+          <img src="../img/wildflowers2.jpg"/>
+          <img src="../img/wildflowers3.jpg"/>
+          <img src="../img/wildflowers4.jpg"/>
+          <img src="../img/wildflowers5.jpg"/>
+          <img src="../img/wildflowers6.jpg"/>
+          <img src="../img/wildflowers7.jpg"/>
+
+        </div>
+       
+        <div class="p-text-container">
+          <p>
+            Wildflowers<br>
+            Book, 2021
+            </p>
+          <p></p>
+        </div>
+      </div>
+
       
     </section><!-- End portfolio -->
 
+    <div class="embla">
+      <div class="embla__container">
+        <div class="embla__slide">Slide 1</div>
+        <div class="embla__slide">Slide 2</div>
+        <div class="embla__slide">Slide 3</div>
+      </div>
+    </div>
+
+<!--     
     <section id="index">
       <div>text goes here</div>
-    </section>
+    </section> -->
 
 
 
 
+  <script type="text/javascript">
+  const emblaNode = document.querySelector('.embla')
+  const options = { loop: false }
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  const embla = EmblaCarousel(emblaNode, options)
+  </script>
+  <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <!-- <script src="../js/main.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
