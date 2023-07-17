@@ -23,9 +23,9 @@
 
 
 
-import EmblaCarousel from '../embla-carousel'
+import EmblaCarousel from 'embla-carousel'
 
-const emblaNode = document.querySelector('.embla')
+const emblaNoe = document.querySelector('.embla')
 const options = { loop: false }
 
 const emblaApi = EmblaCarousel(emblaNode, options)
