@@ -32,17 +32,17 @@
 
 html {
   color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 body{
   margin: 15px;
   font-family: "Panama";
+  font-size: 13px;
 }
 
 h1, h2, p, a{
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -68,13 +68,16 @@ nav{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0px 0px 10px 0px;
-  border-bottom: 1px dashed;
-  font-size: 10pt;
+  border-bottom: 1px solid;
+}
+
+nav div{
+  max-width: 600px;
+  padding-right: 30px;
 }
 
 nav div a{
   display: block;
-  font-size: 10pt;
 }
 
 nav div a:hover{
@@ -84,8 +87,6 @@ nav div a:hover{
 video{
   width: 100%;
 }
-
-
 
 .ast a{
   margin-bottom: 5px;
@@ -135,8 +136,6 @@ a.text-blue{
   pointer-events: all;
 }
 
-
-
 .full-img{
   position:absolute;
   height: 70%;
@@ -183,11 +182,7 @@ caption{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px 0;
-  font-size: 10pt;
 }
-
-
-
 
 /* Clock container styles -----------*/
 
@@ -269,17 +264,6 @@ caption{
   text-shadow: none;
 }
 
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
-
 /*
  * A better looking default horizontal rule
  */
@@ -340,8 +324,58 @@ textarea {
    input[type=number] {
        -moz-appearance:textfield; /* Firefox */
        appearance:textfield; /* Firefox */
+   }
+
+   .swiper{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding-top: 10px;
+   }
+   
+   .swiper:first-child{
+    padding-top: 10px;
+   }
+
+   .swiper-slide{
+    display: grid;
+    place-content: center;
+    padding-bottom: 10px;
+   
+   }
+
+   .swiper-slide img{
+    height: 100vh;
+    width: 100%;
+      object-fit: cover;
+      margin: 0 auto;
+   }
+
+   .swiper-slide video{
+    height: 100vh;
+    width: 100%;
+      object-fit: cover;
+      margin: 0 auto;
 
    }
+
+   .p-text-container{
+    padding: 10px;
+   }
+
+   .swiper .swiper-button-next, .swiper .swiper-button-prev{
+    opacity: 0.0;
+    transition: 0.3s;
+    
+
+     }
+
+    .swiper:hover .swiper-button-next, .swiper:hover .swiper-button-prev{ 
+      opacity: 1;
+      color: silver;
+      mix-blend-mode: difference;
+       }
+
+ 
 
 
 /* ==========================================================================
@@ -559,7 +593,6 @@ textarea {
   }
 
   li.ast a{
-    font-size: px;
     font-weight: 800;
 
   }

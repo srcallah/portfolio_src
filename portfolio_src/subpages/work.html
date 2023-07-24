@@ -21,9 +21,13 @@
   <meta name="theme-color" content="#ffffff">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- Swipper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js" integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
-  
 
 
 </head>
@@ -31,29 +35,65 @@
 <body>
 
     <nav>
-        <div>
-          Sam Callahan is a graphic designer currently living and working in New Haven, CT. She received her MFA at the Yale School of Art in 2023.
+        <div class="about">
+          Sam Callahan is a graphic designer and educator. She received her MFA at the Yale School of Art in 2023.
         </div>
         <div>
-          <a href="#index">Index</a>
-          <a href="https://www.are.na/samantha-callahan" target="_blank">are.na</a>
+          <ul>
+            <li><a href="#index">Index</a></li>
+            <li>
+              <a href="https://www.are.na/samantha-callahan" target="_blank">are.na</a></li>
+            <li>email@sam-callahan.work</li>
+          </ul>
         </div>
-        
     </nav>
 
     <section class="portfolio-container">
-     
-    <div class="project-container">
-      <div class="p-image-container">
-        <img src="../img/actionrequired2.jpg"/>
-        <img src="../img/actionrequired3.jpg"/>
-        <img src="../img/actionrequired1.jpg"/>
-        <img src="../img/actionrequired5.gif"/>
+      
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- <video src="../img/ps_microfilm.mov" muted autoplay loop></video> -->
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/ps_poster2.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/ps_poster3.jpg"/>
+          </div>
+        </div><!-- wrapper -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="p-text-container">
+            <p>Pacifico Silano for The Yale School of Art Photo Lecture Series<br>
+            Multimedia announcement, 2023</p>
+            <p>Silano is a lens-based artist that documents the print culture of the LGBTQ+ identity. For the lecture announcement, I photographed images of 70s male erotica located in the Yale's Archives and Manuscripts and designed a set of transparency film to be placed in an analog microfiche reader.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper mySwiper first">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/4x4_grc2.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_grc1.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_grc3.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_grc4.jpg"/>
+          </div>
+        </div><!-- wrapper -->
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
       </div>
      
       <div class="p-text-container">
-        <p>ACTION REQUIRED <br>
-            Exhibition Identity, 2021
+        <p>Green Revolution Cookbook <br>
+           Softcover book, 2023
         </p>
         <p>
           Custom glyphs, gallery signage, vinyl and 
@@ -61,101 +101,112 @@
           for the Yale School of Art First Year MFA Show.
         </p>
       </div>
+  
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../img/wildflowers2.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_wf1.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_wf2.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_wf3.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/4x4_wf4.jpg"/>
+          </div>
+        </div><!-- wrapper -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+      <div class="p-text-container">
+        <p>
+          Wildflowers<br>
+          Book, 2021
+          </p>
+        <p></p>
+      </div>
     </div>
 
-      <div class="project-container">
-        <div class="p-image-container">
-          <video muted autoplay>
-            <source src="../img/wywh.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../img/actionrequired1.jpg"/>
+        </div>
+       
+        <div class="swiper-slide">
+          <img src="../img/actionrequired3.jpg"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/actionrequired2.jpg"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/actionrequired5.gif"/>
+        </div>
+      </div><!-- wrapper -->
+      <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+   
+    <div class="p-text-container">
+      <p>ACTION REQUIRED <br>
+          Exhibition Identity, 2021
+      </p>
+      <p>
+        Custom glyphs, gallery signage, vinyl and 
+        brochure designed in collaboration with Junyi Shi 
+        for the Yale School of Art First Year MFA Show.
+      </p>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video src="../img/wywh.mp4" muted autoplay></video>
+        </div>
+        <div class="swiper-slide">
           <img src="../img/radio1.jpg"/>
+        </div>
+        <div class="swiper-slide">
           <img src="../img/radio2.jpg"/>
-          
-        </div>
-       
-        <div class="p-text-container">
-          <p>Wish you were hear<br>
-            SSTV Transmissions, 2022
-          </p>
-          <p>
-            <i>Wish you were hear</i> stitches together a series of images and writings that were transmitted using using a handheld two-way radio. The images are encrypted into a series of tones and decrypted using SSTV software.
-          </p>
-        </div>
+        </div> 
+      </div><!-- wrapper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-
-      <div class="project-container">
-        <div class="p-image-container">
-          <img src="../img/ps_poster.gif"/>
-          <img src="../img/ps_poster2.jpg"/>
-          
-        </div>
-       
-        <div class="p-text-container">
-          <p>Pacifico Silano for The Yale School of Art Photo Lecture Series<br>
-          Multimedia announcement, 2023</p>
-          <p>Silano is a lens-based artist that documents the print culture of the LGBTQ+ identity. For the lecture announcement, I photographed images of 70s male erotica located in the Yale's Archives and Manuscripts and designed a set of transparency film to be placed in an analog microfiche reader.</p>
-        </div>
+ 
+      <div class="p-text-container">
+        <p>Pacifico Silano for The Yale School of Art Photo Lecture Series<br>
+        Multimedia announcement, 2023</p>
+        <p>Silano is a lens-based artist that documents the print culture of the LGBTQ+ identity. For the lecture announcement, I photographed images of 70s male erotica located in the Yale's Archives and Manuscripts and designed a set of transparency film to be placed in an analog microfiche reader.</p>
       </div>
-
-      <div class="project-container">
-        <div class="p-image-container">
-          <video muted autoplay>
-            <source src="../img/shenxin.mov" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-        </div>
-       
-        <div class="p-text-container">
-          <p>Shen Xin for The Yale School of Art Photo Lecture Series<br>
-            Multimedia announcement, 2022</p>
-          <p>Inspired by their installation "The Earth Turned Green": a projection of video captures of seasonal light mapped onto metal folding chairs with applied vinyl. </p>
-        </div>
+    </div>
+    
+    
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video src="../img/shenxin.mov" muted autoplay loop></video>
       </div>
+    </div><!-- wrapper -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="p-text-container">
+      <p>Shen Xin for The Yale School of Art Photo Lecture Series<br>
+        Multimedia announcement, 2022</p>
+      <p>Inspired by their installation "The Earth Turned Green": a projection of video captures of seasonal light mapped onto metal folding chairs with applied vinyl. </p>
+    </div>
+  </div>
 
-      <div class="project-container">
-        <div class="p-image-container">
-          <img src="../img/wildflowers1.jpg"/>
-          <img src="../img/wildflowers2.jpg"/>
-          <img src="../img/wildflowers3.jpg"/>
-          <img src="../img/wildflowers4.jpg"/>
-          <img src="../img/wildflowers5.jpg"/>
-          <img src="../img/wildflowers6.jpg"/>
-          <img src="../img/wildflowers7.jpg"/>
 
-        </div>
-       
-        <div class="p-text-container">
-          <p>
-            Wildflowers<br>
-            Book, 2021
-            </p>
-          <p></p>
-        </div>
-      </div>
-
-      
     </section><!-- End portfolio -->
 
-    <div class="embla">
-      <div class="embla__container">
-        <div class="embla__slide">Slide 1</div>
-        <div class="embla__slide">Slide 2</div>
-        <div class="embla__slide">Slide 3</div>
-      </div>
-    </div>
-
-<!--     
-    <section id="index">
-      <div>text goes here</div>
-    </section> -->
-
-
-
-
-  
 
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../js/plugins.js"></script>
@@ -167,6 +218,15 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script >
+    const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    console.log(swiper)
+  </script>
 </body>
 
 </html>
