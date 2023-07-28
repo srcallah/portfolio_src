@@ -1,18 +1,6 @@
 /* ==========================================================================
    Base styles: 
    ========================================================================== */
-   @font-face {
-    font-family: 'Panama';
-    src: url("../font/PanamaRegular.otf") format('otf');
-    font-style: normal;
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: 'Panama';
-    src: url("../font/PanamaItalic.woff") format('woff');
-    font-style: italic;
-    font-weight: 400;
-  }
 
   @font-face {
     font-family: 'Seeko';
@@ -104,8 +92,8 @@ input[type=number] {
 }
 
 .ast a:hover{
-  background-color: silver;
-  color: red;
+  background-color: maroon;
+  color: white;
   text-decoration: none;
 }
 
@@ -126,7 +114,7 @@ input[type=number] {
 
 .full-img{
   position:absolute;
-  height: 70%;
+  height: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -150,7 +138,7 @@ caption{
   width: 100%;
   display: flex;
   position: absolute;
-  bottom: 0px;
+  bottom: 1rem;
   margin: 0 auto;
 }
 
