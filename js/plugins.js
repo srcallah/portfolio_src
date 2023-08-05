@@ -1,4 +1,3 @@
-
 const srcPort = new Swiper('.swiper-container', {
   lazy: true,
   effect: 'fade',
@@ -67,3 +66,5 @@ const srcPort = new Swiper('.swiper-container', {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
   
   srcPort.on('click',function(swiper,event){ swiper.slideNext(); }); 
+
+ 
