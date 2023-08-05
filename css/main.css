@@ -289,6 +289,11 @@ a {
 
 /* Index styling */
 .index-container{
+    margin: 1rem;
+}
+
+.h-index{
+    padding-bottom: 1rem;
 }
 
 .h-index h1{
@@ -307,8 +312,11 @@ a {
 
 .cycle-slideshow{
 background-color: black;
+width: 
 }
 .cycle-slideshow img{
 width: 100%;
 object-fit: cover;
+height: 80vh;
+
 }
