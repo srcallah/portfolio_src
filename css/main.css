@@ -306,17 +306,45 @@ a {
 
 .project-container{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
+
 
 
 .cycle-slideshow{
 background-color: black;
-width: 
+position: relative;
 }
+
 .cycle-slideshow img{
 width: 100%;
-object-fit: cover;
-height: 80vh;
+object-fit: contain;
+}
+
+.cycle-prev{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 50%;
+}
+
+.cycle-prev:hover{
+    cursor:crosshair;
+}
+
+.cycle-next{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 50%;
+}
+
+figcaption{
+    border-top: 5px solid black;
+    padding-left: 1rem;
 
 }
