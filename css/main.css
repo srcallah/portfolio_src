@@ -60,15 +60,15 @@ h1 {
 body {
     font-family: sans-serif;
     line-height:1.3;
-    /* overflow:hidden; */
+    overflow:hidden;
 }
 
 .designer-info {
     position:absolute;
-    z-index:9999;
-    width:50vw;
+    z-index: 9999;
+    width: 50vw;
     box-sizing: border-box;
-    padding:var(--base-spacing)
+    padding:var(--base-spacing);    
 }
 
 @media only screen and (max-width: 700px) {
@@ -77,6 +77,7 @@ body {
 
 .designer-info p{
     display:inline
+
 }
 
 .portfolio-container {
@@ -110,6 +111,20 @@ body {
     text-align: right;
 }
 
+.toggle-index{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 1rem;
+    right: 2rem;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+}
+
+.toggle-index:hover{
+    text-decoration: underline;
+}
 .black {
     background-color:var(--base-color);
 }
@@ -141,13 +156,13 @@ body {
     font-size:1rem;
 }
 
-figcaption {
+.fig-frame figcaption {
     bottom:0;
     max-width:50vw;
     font-size:var(--base-spacing);
     padding-top:var(--base-spacing);
     box-sizing: border-box;
-    z-index:9999;
+    z-index:9998;
 }
 @media only screen and (max-width: 700px) {
 
@@ -288,38 +303,65 @@ a {
 
 
 /* Index styling */
+
+#indexView {
+    display: none;
+  }
+
 .index-container{
-    margin: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 150px 1rem 1rem 1rem;
+    z-index: 9998;
+    overflow-y: scroll;
 }
 
+
 .h-index{
-    padding-bottom: 1rem;
+    padding:var(--base-spacing);
 }
 
 .h-index h1{
+    margin: 0;
+    padding: 0;
   text-transform: uppercase;
-  font-size: 9pt;
   letter-spacing: .5px;
-  color: red;
   text-align: center;
 }
 
 .project-container{
   display: grid;
   grid-template-columns: 3fr 2fr;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  border-top: 1px solid black;
+
 }
 
-
+.project-container:first-child{
+  
+  }
 
 .cycle-slideshow{
 background-color: black;
 position: relative;
+margin-bottom: .25rem;
 }
 
 .cycle-slideshow img{
 width: 100%;
 object-fit: contain;
+max-height: 80vh;
+
 }
+
+.cycle-slideshow .cover{
+    width: 100%;
+    object-fit: cover;
+    }
 
 .cycle-prev{
     position: absolute;
@@ -344,7 +386,47 @@ object-fit: contain;
 }
 
 figcaption{
-    border-top: 5px solid black;
-    padding-left: 1rem;
-
+    padding-top: .5rem;
+    margin-left: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.fig-head{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: .5rem;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+figcaption h3{
+    font-weight: 400;
+    padding: 0;
+    font-size: 16pt;
+    line-height: 1.1;
+}
+
+figcaption h4{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .5px;
+    padding-top: .2rem;
+}
+
+.fig-foot p{
+    padding-bottom: 1.6rem;
+    font-size: 9.5pt;
+    
+}
+figcaption a{
+    padding-bottom: 1.1rem;
+    font-size: 7.5pt;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+

@@ -22,59 +22,265 @@
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <!-- include Cycle2 -->
+  <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+  <script src="https://malsup.github.io/jquery.cycle2.center.js"></script>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-  <section class="portfolio-container">
-    
     <header class="designer-info">
-        <h1 class="m-type">Sam Callahan</h1>
+        <h1 class="m-type" >Sam Callahan</h1>
         <p class="m-type dk">
             is a graphic designer currently working and teaching in New Haven, New London and New York. She received an MFA from the Yale School of Art in 2023.
-        </p>
-        <p>For CV and full portfolio email: <a href="mailto:contact@sam-callahan.work">contact@sam-callahan.work</a></p>
-        
+            For CV and full portfolio email: <a href="mailto:contact@sam-callahan.work" class="highlight">contact@sam-callahan.work</a>
+        </p>     
     </header>
-    
+
+    <div class="index-container" id="indexView">
+
+        <section class="project-container">
+            <figure>
+                <div class="cycle-slideshow" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=0
+                    data-cycle-center-horz=true
+                    data-cycle-center-vert=true
+                    swipe=true
+                    data-cycle-caption="#custom-caption0"
+                    data-cycle-caption-template="{{slideNum}} / {{slideCount}}"
+                    >        
+                    <div class="cycle-prev"></div>
+                    <div class="cycle-next"></div>          
+                    <img src="../img/grc_spreads.jpg" class="cover" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/GRC_scan.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc44.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc49.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc63.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc73.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc137.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc143.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc217.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc244.jpg" alt="Green Revolution Cookbook spreads" />
+                    <img src="../img/grc246.jpg" alt="Green Revolution Cookbook spreads" />
+                </div>
+                <div id="custom-caption0"></div>
+            </figure>
+            <figcaption>
+                <div class="fig-head">
+                    <h3>Green Revolution Cookbook</h3>
+                    <h3 class="txt-right">2023</h4>
+                    <h4>Yale School of Architecture</h4>                   
+                </div>
+                <div class="fig-foot">
+                    <p>
+                        The Green Revolution Cookbook is the product of a seminar course taught in the School of Architecture by Diana Balmori Assistant Professor Anthony Acciavatti titled <em>Labs and Landscapes of the Green Revolution</em>. This book features essays, illustrations and recipes from 18 students on the geo-politics of food and agriculture. Designed with M.C.&nbsp;Madrigal.
+                    </p>
+                    
+                    
+                </div>
+                
+
+            </figcaption>
+        </section>
+
+        <section class="project-container">
+            <figure>
+                <div class="cycle-slideshow" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=0
+                    data-cycle-center-horz=true
+                    data-cycle-center-vert=true
+                    data-cycle-swipe=true
+                    data-cycle-caption="#custom-caption1"
+                    data-cycle-caption-template="{{slideNum}} / {{slideCount}}"
+                    >
+                    <div class="cycle-prev"></div>
+                    <div class="cycle-next"></div>
+                    <img src="../img/actionrequired5.jpg" class="cover" alt="Action Required First Year MFA Show" />
+                    <img src="../img/actionrequired1.jpg" class="cover" alt="Action Required First Year MFA Show" />
+                    <img src="../img/actionrequired6.gif" alt="Action Required First Year MFA Show" />                  
+                    <img src="../img/actionrequired2.jpg" class="cover" alt="Action Required First Year MFA Show" />                  
+                </div>  
+                <div id="custom-caption1"></div>              
+            </figure>
+            <figcaption>
+                <div class="fig-head">
+                    <h3>Action Required</h3>
+                    <h3 class="txt-right">2021</h3>
+                    <h4>Yale School of Art</h4>
+                </div>
+                <div class="fig-foot">
+                    <p>
+                        The First Year MFA exhibition identity for the class of 2023. Custom glyphs, signage, brochures and motion graphics designed with Junyi&nbsp;Shi. 
+                    </p>                   
+                </div>
+            </figcaption>       
+         </section>
+
+         <section class="project-container">
+            <figure>
+                <div class="cycle-slideshow" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=0
+                    data-cycle-center-horz=true
+                    data-cycle-center-vert=true
+                    data-cycle-swipe=true
+                    data-cycle-caption="#custom-caption2"
+                    data-cycle-caption-template="{{slideNum}} / {{slideCount}}"                  
+                    >
+                    <div class="cycle-prev"></div>
+                    <div class="cycle-next"></div>
+                    <img src="../img/ps_poster3.jpg" class="cover" alt="Pacifico Silano Yale School of Art Lecture Series" />
+                    <img src="../img/ps_microfilm.gif" class="cover" alt="Pacifico Silano Yale School of Art Lecture Series" />
+                    <img src="../img/ps_poster4.jpg" class="cover" alt="Pacifico Silano Yale School of Art Lecture Series" />                                
+                </div>  
+                <div id="custom-caption2"></div>       
+            </figure>
+            <figcaption>
+                <div class="fig-head">
+                    <h3>Pacifico Silano</h3>
+                    <h3 class="txt-right">2023</h3>
+                    <h4>Yale School of Art</h4>                 
+                </div>
+                <div class="fig-foot">
+                    <p>
+                        An announcement designed for the Yale Photo Lecture Series. Formatted for microfiche projectors, the transparency features photographed close-ups of queer magazines found in Yale's Archives & Manuscripts LGBTQ+ collections. 
+                        <br><a href="https://vimeo.com/824191990?share=copy" target="_blank">VIEW VIDEO</a>
+                    </p>
+                </div>
+            </figcaption>       
+         </section>
+
+         <section class="project-container">
+            <figure>
+                <div class="cycle-slideshow" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=0
+                    data-cycle-center-horz=true
+                    data-cycle-center-vert=true
+                    data-cycle-swipe=true
+                    data-cycle-caption="#custom-caption4"
+                    data-cycle-caption-template="{{slideNum}} / {{slideCount}}"              
+                    >
+                    <div class="cycle-prev"></div>
+                    <div class="cycle-next"></div>
+                    <img src="../img/radio1.jpg" alt="SSTV Images" />
+                    <img src="../img/wywh-clip.gif" alt="SSTV Images" />  
+                                          
+                </div>  
+                <div id="custom-caption4"></div>            
+            </figure>
+            <figcaption>
+                <div class="fig-head">
+                    <h3>Wish you were here</h3>                  
+                    <h3 class="txt-right">2022</h2>
+                </div>               
+                <div class="fig-foot">
+                    <p>
+                        A radio-like object where the form is fixed and new information flows through when turned on. The display plays a loop of images transmitted using SSTV—a method for sending images outside of wifi networks commonly used by amateur radio operators. To encrypt and send the image, I ran a python script (pySSTV) which pulled an image from a directory and generated a series of tones. When the tones are received on shortwave radio, it is then decrypted back into an image using the same program. In instances where the signal is less clear, distortion&nbsp;occurs.
+                    </p>
+                </div>
+            </figcaption>       
+         </section>
+
+         <section class="project-container">
+            <figure>
+                <div class="cycle-slideshow" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=0
+                    data-cycle-center-horz=true
+                    data-cycle-center-vert=true
+                    data-cycle-swipe=true
+                    data-cycle-caption="#custom-caption5"
+                    data-cycle-caption-template="{{slideNum}} / {{slideCount}}"                 
+                    >
+                    <div class="cycle-prev"></div>
+                    <div class="cycle-next"></div>
+                    <img src="../img/shenxin2.jpg" alt="Shen Xin" />              
+                </div>  
+                <div id="custom-caption5"></div>
+                 
+            </figure>
+            <figcaption>
+                <div class="fig-head">
+                    <h3>Shen Xin</h3>
+                    <h3 class="txt-right">2022</h3>
+                    <h4>Yale School of Art</h4>
+                   
+                </div>
+                <div class="fig-foot">
+
+                    <p>
+                       An announcement for Shen Xin's Lecture inspired by their installation, <em>The Earth Turned Green</em>. Metal folding chair with cut vinyl and projected seasonal light skewed to depict different hours of the&nbsp;day.
+                       <br><a href="https://vimeo.com/782194097?share=copy" target="_blank">View video</a>
+                    </p>
+                </div>
+            </figcaption>       
+         </section>
+
+         <section class="project-container">
+            <figure>
+                <div class="cycle-slideshow" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=0
+                    data-cycle-center-horz=true
+                    data-cycle-center-vert=true
+                    data-cycle-swipe=true
+                    data-cycle-caption="#custom-caption6"
+                    data-cycle-caption-template="{{slideNum}} / {{slideCount}}"                 
+                    >
+                    <div class="cycle-prev"></div>
+                    <div class="cycle-next"></div>
+                    <img src="../img/wildflowers2.jpg" alt="Wildflowers book, a queer archive" />
+                    <img src="../img/wildflowers5.jpg" alt="Wildflowers book, a queer archive" /> 
+                    <img src="../img/wildflowers5.jpg" alt="Wildflowers book, a queer archive" />
+                    <img src="../img/wf2.jpg" alt="Wildflowers book, a queer archive" /> 
+                    <img src="../img/wf3.jpg" alt="Wildflowers book, a queer archive" />   
+                    <img src="../img/wf4.jpg" alt="Wildflowers book, a queer archive" /> 
+                    <img src="../img/4x4_wf4.jpg" alt="Wildflowers book, a queer archive" />          
+                </div>  
+                <div id="custom-caption6"></div>
+                 
+            </figure>
+            <figcaption>
+                <div class="fig-head">
+                    <h3>Wildflowers</h3>
+                    <h3 class="txt-right">2021</h3>
+                   
+                </div>
+                <div class="fig-foot">
+                    <p>
+                        A book in three parts: an informal timeline between NYC queer spaces and <a href="https://queeringthemap.com" target="_blank">queeringthemap</a> messages that are recorded in close proximity, interviews with artists and activists, and photographs collected from NYC archives that record queer life from the 1960s to present day. The title reflects the resilience of these communities and their ability to grow in even the most hostile environments.
+                    </p>
+                </div>
+            </figcaption>       
+         </section>
+    </div><!-- Index end -->
+
+<section class="portfolio-container">    
 <div class="swiper-container">
 
-    <div class="swiper-wrapper">
-
-        <div class="swiper-slide portfolio-proj mix">
-            <figure class="fig-frame">
-                
-                <figcaption class="invt">
-                </figcaption>
-            </figure>
-        </div>
-       
-        <div class="swiper-slide portfolio-proj mix" style="background:url('/./img/ps_poster2.jpg'); background-position:center; background-size:cover;">
+    <div class="swiper-wrapper">     
+        <div class="swiper-slide portfolio-proj mix" style="background:url('/./img/ps_poster4.jpg'); background-position:center; background-size:cover;">
             <figure class="fig-frame" >
                    <figcaption class="txt-align-left m-type invt">
                        Pacifico Silano for The Yale School of Art Photo Lecture Series, 2023. Announcement on microfiche transparency.
                    </figcaption>
             </figure>      
         </div>
-           
-        <div class="swiper-slide portfolio-proj mix black">
-            <figure class="fig-frame">
-                <img class="lg" src="/./img/4x4_grc3.jpg" alt="">
-                <figcaption class="invt">
-                    The Green Revolution Cookbook, 2023. Designed with M.C. Madrigal for The Yale School of&nbsp;Architecture.                  
-                </figcaption>
-            </figure>
-        </div>
                  
-        <div class="swiper-slide portfolio-proj mix black">
-            <figure class="fig-frame">
-                <img class="lg" src="/./img/actionrequired3.jpg" alt="">
-                <figcaption class="invt">
+       
+        <div class="swiper-slide portfolio-proj mix" style="background:url('/./img/actionrequired5.jpg'); background-position:center; background-size:cover;">
+            <figure class="fig-frame" >
+                <figcaption class="txt-align-left m-type invt">
                     Action Required, 2021. Exhibition identity for the 1st year MFA students at Yale School of Art designed with Junyi Shi.              
                 </figcaption>
-            </figure>
+            </figure>      
         </div>
+                     
 
         <div class="swiper-slide portfolio-proj mix black">
             <figure class="fig-frame" >
@@ -85,19 +291,9 @@
             </figure>      
         </div>
 
-        <div class="swiper-slide portfolio-proj mix black">
-            <figure class="fig-frame">
-                <img class="lg" src="/./img/GRC_scan.jpg" alt="">
-                <figcaption class="invt">
-                    The Green Revolution Cookbook, 2023. Designed with M.C. Madrigal for The Yale School of&nbsp;Architecture.                  
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="swiper-slide portfolio-proj mix black">
-            <figure class="fig-frame">
-                <img class="lg" src="/./img/4x4_grc1.jpg" alt="">
-                <figcaption class="invt">
+        <div class="swiper-slide portfolio-proj" style="background:url('/./img/grc_spreads.jpg'); background-position:center; background-size:cover;">            
+            <figure class="fig-frame">              
+                <figcaption class="invt m-type txt-align-left">
                     The Green Revolution Cookbook, 2023. Designed with M.C. Madrigal for The Yale School of&nbsp;Architecture.                  
                 </figcaption>
             </figure>
@@ -105,12 +301,11 @@
 
         <div class="swiper-slide portfolio-proj" style="background:url('/./img/actionrequired1.jpg'); background-position:center; background-size:cover;">
             <figure class="fig-frame" >
-                   <figcaption class="txt-align-left m-type invt">
+                   <figcaption class="txt-align-left m-type">
                     Action Required, 2021. Exhibition identity for the 1st year MFA students at Yale School of Art designed with Junyi Shi.              
                    </figcaption>
                </figure>      
         </div> 
-
        
         <div class="swiper-slide portfolio-proj mix black">
             <figure class="fig-frame" >
@@ -123,25 +318,11 @@
 
         <div class="swiper-slide portfolio-proj mix black">
             <figure class="fig-frame">
-                <img class="lg" src="/./img/wildflowers2.jpg" alt="">
+                <img class="lg" src="/./img/wildflowers5.jpg" alt="">
                 <figcaption class="invt">Wildflowers, 2022. A print archive capturing historic LGBTQ+ sites in close proximity with pinned comments located on queeringthemap.com, interviews from queer activists and photos found at NYC LGBTQ public archives.</figcaption>
             </figure>
         </div>
 
-
-        <div class="swiper-slide portfolio-proj mix black">
-            <figure class="fig-frame">
-                <img class="lg" src="/./img/4x4_wf2.jpg" alt="">
-                <figcaption class="invt">Wildflowers, 2022. A print archive capturing historic LGBTQ+ sites in close proximity with pinned comments located on queeringthemap.com, interviews from queer activists and photos found at NYC LGBTQ public archives.</figcaption>
-            </figure>
-        </div>
-
-        <div class="swiper-slide portfolio-proj mix black">
-            <figure class="fig-frame">
-                <img class="lg" src="/./img/4x4_wf1.jpg" alt="">
-                <figcaption class="invt">Wildflowers, 2022. A print archive capturing historic LGBTQ+ sites in close proximity with pinned comments located on queeringthemap.com, interviews from queer activists and photos found at NYC LGBTQ public archives.</figcaption>
-            </figure>
-        </div>
         <div class="swiper-slide portfolio-proj mix black">
             <figure class="fig-frame" >
                 <video src="/./img/shenxin.mov" height="900" alt="" muted autoplay loop></video>>
@@ -150,30 +331,39 @@
                    </figcaption>
             </figure>      
         </div>
-        <div class="swiper-slide portfolio-proj mix black">
+        <!-- <div class="swiper-slide portfolio-proj mix black">
             <figure class="fig-frame" >
                 <video class="lg" src="/./img/wywh.mp4" alt="" muted autoplay loop></video>>
                    <figcaption class="txt-align-left m-type invt">
                        Pacifico Silano for The Yale School of Art Photo Lecture Series, 2023. Announcement on analog microfilm reader.
                    </figcaption>
             </figure>      
-        </div>
+        </div> -->
         <div class="swiper-slide portfolio-proj mix black">
             <figure class="fig-frame">
                 <img class="lg" src="/./img/radio1.jpg" alt="">
                 <figcaption class="invt">Wish you were hear, 2022. Acrylic container and pyportal device that displays a compilation of small JPGs that were sent and received using a handheld radio and software that decrypts a series of tones into images.
                 </figcaption>
             </figure>
-        </div>
-        
-        
+        </div>    
     </div>
         <div class="swiper-pagination blend-mode"></div>
+        <button id="myIndex" class="toggle-index blend-mode">Index of Projects</button>  
     </div>
-
 </section>
 
+<script>
+    document.getElementById("myIndex").onclick = function() {toggleIndex()};
 
+    function toggleIndex() {
+    var x = document.getElementById("indexView");
+    if (x.style.display === "block") {
+    x.style.display = "none";} 
+    else {
+    x.style.display = "block";
+  }
+}
+</script>
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../js/plugins.js"></script>
 </body>
