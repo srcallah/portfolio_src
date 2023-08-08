@@ -304,11 +304,11 @@ a {
 
 /* Index styling */
 
-#indexView {
-    display: none;
-  }
+
+ 
 
 .index-container{
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -319,6 +319,9 @@ a {
     overflow-y: scroll;
 }
 
+.show{
+    display: block;
+  }
 
 .h-index{
     padding:var(--base-spacing);
@@ -340,10 +343,6 @@ a {
   border-top: 1px solid black;
 
 }
-
-.project-container:first-child{
-  
-  }
 
 .cycle-slideshow{
 background-color: black;

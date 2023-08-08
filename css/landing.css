@@ -82,11 +82,10 @@ input[type=number] {
 .ast a{
   margin-bottom: 5px;
   font-size: 9pt;
-  padding: 2px;
-  border-radius: 15%;
-  width: 16px;
-  height: 16px;
+  padding: 4px;
+  border-radius: 2px;
   text-align: center;
+  width: 100%;
   background-color: red;
   color: white;
 }
