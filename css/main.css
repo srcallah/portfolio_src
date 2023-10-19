@@ -357,9 +357,10 @@ max-height: 80vh;
 
 }
 
-.cycle-slideshow .cover{
+.cycle-slideshow img.cover{
     width: 100%;
     object-fit: cover;
+    max-height: 100vh;
     }
 
 .cycle-prev{
