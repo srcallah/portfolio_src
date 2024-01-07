@@ -2,13 +2,6 @@
    Base styles: 
    ========================================================================== */
 
-  @font-face {
-    font-family: 'Seeko';
-    src: url("../font/seeko-Regular.woff") format('woff');
-    font-style: normal;
-    font-weight: 400;
-  }
-
   * {
     margin:0;
     padding:0;
@@ -27,12 +20,8 @@ header{
     max-width: 600px;
     padding: 9px;
     margin: 0rem auto;
-    color: red;
 }
 
-a{
-  color: red;
-}
 
 a:hover{
   font-weight: 800;
@@ -54,224 +43,15 @@ header p{
   text-align: left;
 }
 
-
-/* ==========================================================================
-Clock Landing Page
-========================================================================== */
-
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-.clock-settings a{
-  text-decoration: none;
-  font-family: monospace;
-
-}
-
-.ast a{
-  margin-bottom: 5px;
-  font-size: 9pt;
-  padding: 4px;
-  border-radius: 2px;
-  text-align: center;
+header img{
   width: 100%;
-  background-color: red;
-  color: white;
+  max-width: 700px;
+  z-index: 100;
 }
 
-.ast a:hover{
-  background-color: maroon;
-  color: white;
-  text-decoration: none;
-}
-
-.modal{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-
-}
-
-.modal.open{
-  opacity: 1;
-  pointer-events: all;
-}
-
-.full-img{
-  position:absolute;
-  height: 80%;
+.image-box{
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-
-.full-img.open{
-  transform: translate(-50%,-50%);
-}
-
-caption{
-  position:absolute;
-  height: 70%;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%,-50%) scale(.5);
-}
-
-/* Clock container styles -----------*/
-
-.wrapper{
-  width: 100%;
-  display: flex;
-  position: absolute;
-  bottom: 1rem;
-  margin: 0 auto;
-}
-
-.clock-container{
-  display: grid;
-  grid-template-columns: 2fr 8fr;
-  padding: 10px;
-  margin: 0 auto;
-  color: red;
-}
-
-.clock-settings{
-  padding-right: 10px;
-}
-
-.clock-settings ul li{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-}
-
-.clock-numbers{
-  font-family: 'Seeko';
-  font-size: 100px;
-  line-height: 1;
-  text-align: justify;
-}
-
-.clock-numbers input{
-  padding: 5px;
-  min-width: 175px;
-  border: 1px solid red;
-  color: red;
-}
-
-.blink {
-  animation: blink-animation 1.5s steps(3, start) infinite;
-  -webkit-animation: blink-animation 1.5s steps(3, start) infinite;
-}
-
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-.project-index{
-  position: absolute;
-  bottom: 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 4fr;
-  padding: 15px;
-}
-
-.index-item{
- margin: 0;
- padding: 10px 1px;
-}
-
-.index-item h2{
-  border-bottom: 1px dashed;
-  padding: 4px 0;
-}
-
-.index-item p{
-  padding: 8px 0;
-
-}
-
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-
-
-@media only screen and (max-width: 600px) {
-  .clock-container{
-    display: block;
-  }
-
-  .clock-settings ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-  }
-
-  .clock-settings ul li{
-    padding: 5px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .clock-container{
-    display: block;
-  }
-  .clock-numbers{
-    margin: auto;
-    font-family: 'Seeko';
-    font-size: 69px;
-    line-height: 1;
-    text-align: center;
-  }
-  
-  .clock-numbers input{
-    padding: 5px;
-    min-width: 120px;
-  }
-
-  .clock-settings ul{
-    margin: auto;
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  li.ast a{
-    font-weight: 800;
-
-  }
-
-}
-
-@media only screen and (max-width: 700px) {
-  main {
-      height: calc(var(--vh, 1vh) * 100);    
-  }
-}
-  
-
-
