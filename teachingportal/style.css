@@ -25,6 +25,11 @@ h1{
     color: blue;
 }
 
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
 main {
     font-size: 1.2rem;
     line-height: 120%;
@@ -59,12 +64,14 @@ main {
 }
 
 .text{
+    margin: 0 auto;
     max-width: 800px;
+    padding-bottom: 2rem;
 }
 
 .text p{
     font-size: 14pt;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .image-wrapper{
