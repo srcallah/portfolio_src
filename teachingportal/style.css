@@ -58,6 +58,15 @@ main {
     display: grid;
 }
 
+.text{
+    max-width: 800px;
+}
+
+.text p{
+    font-size: 14pt;
+    line-height: 1.6;
+}
+
 .image-wrapper{
     padding: 1rem;
     text-align: center;
